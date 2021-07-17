@@ -46,7 +46,7 @@ public class UserValidation {
         
     }
 	
-	public static boolean EmailValidator(){
+	public static boolean emailValidator(){
 		UserValidation userVal = new UserValidation();
 		
         System.out.print("Enter email: " );
@@ -54,4 +54,8 @@ public class UserValidation {
         return Pattern.matches(EMAIL_VALIDATOR, email);
         
     }
+
+	public static boolean parameterizedEmailValidator(String email) {
+		return Pattern.matches(EMAIL_VALIDATOR, email);
+	}
 }
